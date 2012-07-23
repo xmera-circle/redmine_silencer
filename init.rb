@@ -1,4 +1,6 @@
 require 'redmine'
+require 'dispatcher'
+
 require 'redmine_silencer/issue_hooks.rb'
 require 'redmine_silencer/view_hooks.rb'
 
