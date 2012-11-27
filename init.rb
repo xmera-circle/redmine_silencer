@@ -1,12 +1,12 @@
 require 'redmine'
 require 'dispatcher'
 
-require 'redmine_silencer/issue_hooks.rb'
-require 'redmine_silencer/view_hooks.rb'
+require 'redmine_silencer/issue_hooks'
+require 'redmine_silencer/view_hooks'
 
 Dispatcher.to_prepare :redmine_silencer do
-  require_dependency 'journal.rb'
-  require_dependency 'journal_observer.rb'
+  require_dependency 'journal'
+  require_dependency 'journal_observer'
 
   # Redmine-1.1 compatibility
   unless Journal.new.respond_to? :notify?
