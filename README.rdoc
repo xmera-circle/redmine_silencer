@@ -5,9 +5,11 @@ A Redmine plugin to suppress email notifications (at will) when updating issues.
 Works fine with Redmine 2.0.x, whereas the original repo doesn't (after commit f6cc13725c)
 
 
+For Redmine versions prior to 2.x, check out the pre-2.x branch.
+
 = Installation
 
-Simply clone the git repo under /plugins and restart the webserver.
+Simply clone the git repo under plugins/ and restart the webserver.
 
 Then go to Administration > Roles and permissions and enable 'Suppress
 mail notifications' permission for roles that need to be able to do
