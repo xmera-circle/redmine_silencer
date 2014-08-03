@@ -3,3 +3,4 @@
 de:
   label_silencer_suppress_mail: "Unterdrücke E-Mail-Benachrichtigung"
   permission_suppress_mail_notifications: "Unterdrücke E-Mail-Benachrichtigung"
+  silencer_default_settings_label: "Checkbox zum Unterdrücken der Ticket-E-Mail-Benachrichtigungen standardmäßig aktivieren?"

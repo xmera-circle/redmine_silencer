@@ -4,7 +4,7 @@
   <% end %>
   <p class="plugin_redmine_silencer">
     <%= hidden_field_tag 'suppress_mail', '0', :id => nil %>
-    <%= check_box_tag 'suppress_mail' %>
+    <%= check_box_tag 'suppress_mail', '1', Setting.plugin_redmine_silencer['silencer_default'] %>
     <%= label_tag 'suppress_mail', l(:label_silencer_suppress_mail) %>
   </p>
 <% end %>

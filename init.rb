@@ -10,6 +10,10 @@ Redmine::Plugin.register :redmine_silencer do
   requires_redmine :version_or_higher => '2.4.x'
 
   permission :suppress_mail_notifications, {}
+  
+  settings :default => {
+    'silencer_default' => false
+  }, :partial => 'redmine_silencer_settings'
 end
 
 prepare_block = Proc.new do
