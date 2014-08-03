@@ -1,12 +1,11 @@
 require 'redmine'
 
 Redmine::Plugin.register :redmine_silencer do
-  name 'Redmine Silencer plugin'
-  author 'Alex Shulgin'
-  description 'A Redmine plugin to suppress email notifications (at will) when updating issues. (This is a fork by @commandprompt, @tofi86, @paginagmbh of the original plugin!)'
-  version '0.3.1'
+  name 'Redmine Silencer 2'
+  author 'Tobias Fischer'
+  description 'A Redmine plugin to suppress email notifications (at will) when updating issues. (This is a fork by GitHub users @commandprompt, @tofi86 and @paginagmbh of the original plugin made by @a1exsh!)'
+  version '0.4.0'
   url 'https://github.com/paginagmbh/redmine_silencer'
-  author_url 'https://github.com/a1exsh/'
   requires_redmine :version_or_higher => '2.4.x'
 
   permission :suppress_mail_notifications, {}
