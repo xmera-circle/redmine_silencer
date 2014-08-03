@@ -15,3 +15,6 @@ Simply clone the git repo under +plugins/+ in your redmine directory and restart
 Then go to _Administration_ > _Roles and permissions_ and enable 'Suppress
 mail notifications' permission for roles that need to be able to do
 that (typically Manager and/or Developer.)
+
+You can also enable the 'Suppress mail notifications' checkbox by default in _Administration_
+> _Plugins_ > _Configure_ for the redmine_silencer plugin.

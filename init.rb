@@ -7,9 +7,13 @@ Redmine::Plugin.register :redmine_silencer do
   version '0.3.1'
   url 'https://github.com/paginagmbh/redmine_silencer'
   author_url 'https://github.com/a1exsh/'
-  requires_redmine :version_or_higher => '2.0.x'
+  requires_redmine :version_or_higher => '2.4.x'
 
   permission :suppress_mail_notifications, {}
+  
+  settings :default => {
+    'silencer_default' => false
+  }, :partial => 'redmine_silencer_settings'
 end
 
 prepare_block = Proc.new do
