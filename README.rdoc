@@ -11,17 +11,18 @@ Especially useful for silent mass-updates when you don't want to spam all the pr
 
 == Requirements
 
-Works fine with Redmine 2.0 - 2.4, whereas the {original repo}[https://github.com/a1exsh/redmine_silencer] doesn't (after commit f6cc13725c)
+Works fine with Redmine 2.0 - 2.6 and Redmine 3.0, whereas the {original repo}[https://github.com/a1exsh/redmine_silencer] doesn't (after commit f6cc13725c)
 
 * For Redmine versions prior to 2.x, check out the +pre-2.x+ branch.
 * For Redmine versions prior to 2.4, check out the +pre-2.4+ branch.
+* For Redmine versions 2.4.x - 3.0 use the +master+ branch.
 
 
 == Installation
 
 Simply clone the git repo under +plugins/+ in your redmine directory and restart the webserver.
 
-Then go to _Administration_ > _Roles and permissions_ and enable 'Suppress
+Then go to _Administration_ > _Roles_ _and_ _permissions_ and enable 'Suppress
 mail notifications' permission for roles that need to be able to do
 that (typically Manager and/or Developer.)
 
