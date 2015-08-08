@@ -11,11 +11,11 @@ Especially useful for silent mass-updates when you don't want to spam all the pr
 
 == Requirements
 
-Works fine with Redmine 2.0 - 2.6 and Redmine 3.0, whereas the {original repo}[https://github.com/a1exsh/redmine_silencer] doesn't (after commit f6cc13725c)
+Works fine with Redmine 2.0 - 2.6 and Redmine 3.x, whereas the {original repo}[https://github.com/a1exsh/redmine_silencer] doesn't (after commit f6cc13725c)
 
 * For Redmine versions prior to 2.x, check out the +pre-2.x+ branch.
 * For Redmine versions prior to 2.4, check out the +pre-2.4+ branch.
-* For Redmine versions 2.4.x - 3.0 use the +master+ branch.
+* For Redmine versions 2.4.x - 3.x use the +master+ branch.
 
 
 == Installation
