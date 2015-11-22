@@ -1,0 +1,6 @@
+# Bulgarian strings go here for Rails i18n
+# Translated by Ivan Cenov
+bg:
+  label_silencer_suppress_mail: "Без изпращане известия по e-mail"
+  permission_suppress_mail_notifications: "Забрана за изпращане на известия по e-mail"
+  silencer_default_settings_label: "Забраната за изпращане на известия по e-mail да бъде активна по подразбиране"
