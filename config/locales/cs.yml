@@ -2,3 +2,4 @@
 cs:
   label_silencer_suppress_mail: "Potlačení zasílání notifikačních emailů"
   permission_suppress_mail_notifications: "Potlač zaslání notifikačních emailů"
+  silencer_default_settings_label: "Nastavit výchozí stav tlačítka na potlačení emailové notifikace na stav zapnuto?"
