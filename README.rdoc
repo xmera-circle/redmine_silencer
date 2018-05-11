@@ -4,7 +4,7 @@ A Redmine plugin to suppress email notifications (at will) when updating issues.
 
 Especially useful for silent mass-updates when you don't want to spam all the project participants with your minor update.
 
-<em>This is a fork of the 'Redmine Silencer' plugin with contributions from github users @commandprompt, @paginagmbh and @tofi86</em>
+<em>This is a fork of the 'Redmine Silencer' plugin with additional contributions from github users @commandprompt and @tofi86 (CTO @paginagmbh)</em>
 
 <em>This plugin is listed in the {Redmine plugin directory}[http://www.redmine.org/plugins/redmine_silencer]</em>
 

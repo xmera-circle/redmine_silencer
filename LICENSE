@@ -1,6 +1,7 @@
 redmine_silencer -- A Redmine plugin to suppress issue email notifications
 
 Copyright (C) 2011  Alex Shuglin <ash@commandprompt.com>
+Copyright (C) 2018  Tobias Fischer <tobias.carl.fischer@gmail.com>
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
