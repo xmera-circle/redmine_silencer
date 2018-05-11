@@ -1,4 +1,4 @@
-<% if User.current.allowed_to?(:suppress_mail_notifications, @projects) %>
+<% if User.current.allowed_to?(:suppress_mail_notifications, @project) || User.current.allowed_to?(:suppress_mail_notifications, @projects) %>
   <% if defined?(issues) %>
     <hr>
   <% end %>
