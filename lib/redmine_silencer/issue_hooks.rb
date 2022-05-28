@@ -1,5 +1,9 @@
 module RedmineSilencer
   class IssueHooks < Redmine::Hook::Listener
+    def controller_issues_new_before_save(context)
+      update_journal_notify(context[:params], context[:journal])
+    end
+
     def controller_issues_edit_before_save(context)
       update_journal_notify(context[:params], context[:journal])
     end
