@@ -8,15 +8,14 @@ Especially useful for silent mass-updates when you don't want to spam all the pr
 
 <em>This plugin is listed in the {Redmine plugin directory}[http://www.redmine.org/plugins/redmine_silencer]</em>
 
-
 == Requirements
 
-Works fine with Redmine 2.0 - 2.6 and Redmine 3.x, whereas the {original repo}[https://github.com/a1exsh/redmine_silencer] doesn't (after commit f6cc13725c)
+Works fine with Redmine 2.0 - 2.6, Redmine 3.x, and Redmine 4.x, whereas the {original repo}[https://github.com/a1exsh/redmine_silencer] doesn't (after commit f6cc13725c)
 
 * For Redmine versions prior to 2.x, check out the +pre-2.x+ branch.
 * For Redmine versions prior to 2.4, check out the +pre-2.4+ branch.
-* For Redmine versions 2.4.x - 3.x use the +master+ branch.
-
+* For Redmine versions prior to 4.x, check out the +pre-4.x+ branch.
+* For Redmine versions 4.x use the +master+ branch.
 
 == Installation
 
