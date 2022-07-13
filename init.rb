@@ -22,3 +22,8 @@ end
 
 require 'redmine_silencer/issue_hooks'
 require 'redmine_silencer/view_hooks'
+
+plugin = Redmine::Plugin.find(:redmine_silencer)
+Rails.application.configure do
+  config.autoload_paths << "#{plugin.directory}/app/services"
+end
