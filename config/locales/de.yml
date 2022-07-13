@@ -4,3 +4,6 @@ de:
   label_silencer_suppress_mail: "Unterdrücke E-Mail-Benachrichtigung"
   permission_suppress_mail_notifications: "E-Mail-Benachrichtigung unterdrücken"
   silencer_default_settings_label: "Checkbox zum Unterdrücken der Ticket-E-Mail-Benachrichtigungen standardmäßig aktivieren?"
+  warn_about_copying_issues: | 
+    Bitte beachten Sie, dass ein Benutzer über ein kopiertes Ticket benachrichtigt wird, wenn in den Einstellungen 'Tickets beim Kopieren verlinken' gewählt wurde. 
+    Wenn Sie das verhindern möchten, sollten Sie Ihre Einstellungen unter Administration -> Konfiguration -> Tickets -> Tickets beim Kopieren verlinken anpassen.
