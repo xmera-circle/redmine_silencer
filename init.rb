@@ -20,15 +20,5 @@ Redmine::Plugin.register :redmine_silencer do
   }, partial: 'redmine_silencer_settings'
 end
 
-prepare_block = proc do
-  Journal.include RedmineSilencer::JournalPatch
-end
-
-if Rails.env.development?
-  Rails.configuration.to_prepare { prepare_block.call }
-else
-  prepare_block.call
-end
-
 require 'redmine_silencer/issue_hooks'
 require 'redmine_silencer/view_hooks'
