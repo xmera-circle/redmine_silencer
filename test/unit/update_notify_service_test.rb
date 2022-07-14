@@ -36,16 +36,17 @@ module RedmineSilencer
       with_settings :notified_events => %w(issue_added) do
         service = UpdateNotifyService.new(suppress_mail: nil, object: @new_issue)
         response = service.update_notify
-        assert response.nil?
+        assert response.notify?
       end
     end
     
     def test_update_notify_with_wrong_object_given
       User.current = @jsmith
+      object = Object.new
       with_settings :notified_events => %w(issue_added) do
-        service = UpdateNotifyService.new(suppress_mail: nil, object: Object.new)
+        service = UpdateNotifyService.new(suppress_mail: nil, object: object)
         response = service.update_notify
-        assert response.nil?
+        assert_equal object.object_id, response.object_id
       end
     end
   end

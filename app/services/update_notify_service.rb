@@ -12,8 +12,8 @@ class UpdateNotifyService
   end
 
   def update_notify
-    return unless object.respond_to? :notify=
-    return unless suppress_mail?
+    return object unless object.respond_to? :notify=
+    return object unless suppress_mail?
 
     object.notify = false if current_user_allowed_to?
     object
