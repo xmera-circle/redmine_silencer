@@ -27,3 +27,11 @@ that (typically Manager and/or Developer.)
 
 You can also enable the 'Suppress mail notifications' checkbox by default in _Administration_
 > _Plugins_ > _Configure_ for the 'redmine_silencer' plugin.
+
+== Caveat concerning version 0.5.x
+
+Copying an issue might lead to a change of the source issue when the global settings of Redmine state that copied issues should be linked by default. 
+
+If so, the users watching or belonging to the source issue will get notified. Unfortunately, it is not possible to avoid the notification of the source issue in such a case.
+
+When you don't want users to be informed about copying issues you should modify the global settings in Administration -> Configuration -> Issues accordingly.
