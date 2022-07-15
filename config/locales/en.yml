@@ -3,3 +3,7 @@ en:
   label_silencer_suppress_mail: "Suppress email notifications"
   permission_suppress_mail_notifications: "Suppress email notifications"
   silencer_default_settings_label: "Enable checkbox to suppress issue email notifications by default?"
+  warn_about_copying_issues: | 
+    Please note that Redmine Silencer cannot control an issue which you select to make a copy from when you configured copied issues to be linked by default!
+
+    When you would like to avoid notifying users that an issue is copied then you should modify your settings in Administration -> Configuration -> Issues -> Link issues on copy.

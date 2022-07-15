@@ -6,23 +6,24 @@ module RedmineSilencer
   #
   class IssueHooks < Redmine::Hook::Listener
     def controller_issues_new_before_save(context)
-      update_journal_notify(context[:params], context[:journal])
+      params = context[:params] || {}
+      service = UpdateNotifyService.new(suppress_mail: params[:suppress_mail],
+                                        object: context[:issue])
+      service.update_notify
     end
 
     def controller_issues_edit_before_save(context)
-      update_journal_notify(context[:params], context[:journal])
+      params = context[:params] || {}
+      service = UpdateNotifyService.new(suppress_mail: params[:suppress_mail],
+                                        object: context[:journal])
+      service.update_notify
     end
 
     def controller_issues_bulk_edit_before_save(context)
-      update_journal_notify(context[:params], context[:issue].current_journal)
-    end
-
-    private
-
-    def update_journal_notify(params, journal)
-      return unless journal && params && params[:suppress_mail] == '1'
-
-      journal.notify = false if User.current.allowed_to?(:suppress_mail_notifications, journal.project)
+      params = context[:params] || {}
+      service = UpdateNotifyService.new(suppress_mail: params[:suppress_mail],
+                                        object: context[:issue]&.current_journal)
+      service.update_notify
     end
   end
 end
